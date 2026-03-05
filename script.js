@@ -18,12 +18,14 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   if (!canvas) return;
 
   const ctx = canvas.getContext('2d');
-  let W, H, particles = [], mouse = { x: W / 2, y: H / 2 };
+  let W, H, particles = [], mouse = { x: 0, y: 0 };
   const COUNT = Math.min(120, Math.floor(window.innerWidth / 10));
 
   function resize() {
     W = canvas.width  = canvas.offsetWidth;
     H = canvas.height = canvas.offsetHeight;
+    mouse.x = W / 2;
+    mouse.y = H / 2;
   }
 
   function randomBetween(a, b) { return a + Math.random() * (b - a); }
