@@ -206,11 +206,11 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   if (!el) return;
 
   const phrases = [
-    'MERN Stack Apps.',
-    'Java Solutions.',
-    'AI/ML Systems.',
+    'Java Full Stack Apps.',
+    'RESTful APIs.',
+    'Spring Boot Solutions.',
     'Scalable Backends.',
-    'Elegant UIs.',
+    'Modern Web Apps.',
   ];
 
   let phraseIdx = 0, charIdx = 0, deleting = false;

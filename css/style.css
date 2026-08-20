@@ -513,6 +513,18 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--shadow-glow);
 }
 
+.avatar-photo {
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: var(--shadow-glow);
+  border: 3px solid var(--accent-1);
+  z-index: 1;
+}
+
 .avatar-ring {
   position: absolute;
   inset: 0;
